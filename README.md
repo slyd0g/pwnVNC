@@ -7,3 +7,5 @@ Output: Snapshots of anyone running a VNC session without any form of authentica
 
 Usage:  <a href= "https://github.com/shamun/vncsnapshot">vncsnapshot</a> must be installed and in the user's path
 
+Big thanks to the developers of vncsnapshot, this project would not be possible without them!
+
