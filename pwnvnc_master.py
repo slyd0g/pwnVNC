@@ -12,9 +12,13 @@ CURRENT_INDEX = 0
 def get_security(TCP_IP):
     snapshot_flag = 0
     vnc_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    vnc_socket.settimeout(0.5)
     try:
         vnc_socket.connect(( TCP_IP,TCP_PORT ))
         RFB_VERSION = vnc_socket.recv(12)
+        if not RFB_VERSION:
+            snapshot_flag = 0
+            return snapshot_flag
         vnc_socket.send(RFB_VERSION)
         num_of_auth = ord(vnc_socket.recv(1))
         for i in xrange(0,num_of_auth):
@@ -25,6 +29,9 @@ def get_security(TCP_IP):
         vnc_socket.shutdown(socket.SHUT_WR)
         vnc_socket.close()
     except socket.error:
+        vnc_socket.close()
+        pass
+    except socket.timeout:
         vnc_socket.close()
         pass
     return snapshot_flag
