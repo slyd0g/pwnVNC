@@ -1,6 +1,6 @@
 # pwnVNC
 
-#Input: List of IPv4 addresses
+#Input: List of IPv4 addresses (obtained from nmap, masscan, etc)
 
 #Output: Snapshots of anyone running a VNC session without any form of authentication
 
