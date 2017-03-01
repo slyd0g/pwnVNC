@@ -52,7 +52,7 @@ if __name__ == '__main__':
             CURRENT_INDEX = CURRENT_INDEX + 1
             os.system("echo " + str(CURRENT_INDEX) + " > index.txt")
             if vncsnap_flag == 1:
-                CMD = "timeout 25 vncsnapshot -allowblank " + ip_addr + ":0 " + ip_addr + ".jpg > /dev/null 2>&1"
+                CMD = "timeout 60 vncsnapshot -allowblank " + ip_addr + ":0 " + ip_addr + ".jpg > /dev/null 2>&1" ##timeout value is up to you (10-60s), higher values will result in more screenshots but longer runtime
                 os.system(CMD)
             else:
                 pass
