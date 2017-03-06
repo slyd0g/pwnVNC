@@ -11,3 +11,4 @@ Usage:  <a href= "https://github.com/shamun/vncsnapshot">vncsnapshot</a> must be
 
 Big thanks to the developers of vncsnapshot, this project would not be possible without them!
 
+Disclaimer: This was written for informational/educational purposes only. You can use/modify this as you please, however, I (Justin Bui) am not responsible for any legal problems you may face using this information. 
