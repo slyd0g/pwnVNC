@@ -7,7 +7,7 @@ List of IPv4 addresses with port 5900 open (obtained from nmap, masscan, etc)
 # Output
 Snapshots (sorted by IP) of anyone running a VNC session without any form of authentication
 
-
+# Comments/Disclaimer
 This script was written on Debian Jessie 8 and requires OS commands. If you want this to run on other OS, adjust the OS command that echo's current index to a file and the OS command that performs the VNC snapshot.
 
 Usage:  <a href= "https://github.com/shamun/vncsnapshot">vncsnapshot</a> must be installed and in the user's path
