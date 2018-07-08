@@ -1,3 +1,6 @@
+# Blogpost
+https://grumpy-sec.blogspot.com/2017/02/scanning-entire-internet.html
+
 # Usage
 python pwnvnc_master.py
 
